@@ -1,5 +1,9 @@
 # Journey Forge Local
 
+[![arXiv](https://img.shields.io/badge/arXiv-2606.32014-b31b1b.svg)](https://arxiv.org/abs/2606.32014)
+
+> Productized companion to our paper **[Scalable Behaviour Cloning on Browser Using via Skill Distillation](https://arxiv.org/abs/2606.32014)** (arXiv:2606.32014). See [Paper & citation](#paper--citation).
+
 Record your own browser tasks → each website accumulates a **bucket of
 capabilities**, and every capability distills into one reusable skill → use them
 in **Claude Desktop** (and Claude Code). A single-user, local product. You bring
@@ -75,3 +79,29 @@ State lives under `data/harness/`: `buckets.json`, `registry.json`, and
   that path instead.
 - Data lives under `data/` (git-ignored). Nothing leaves your machine except
   the distillation calls to your configured LLM.
+
+## Paper & citation
+
+This tool is the productized companion to our research on distilling reusable
+browser skills from human interaction traces — turning scalable human browsing
+into a library of per-site, per-capability skills that browser agents can reuse:
+
+> **Scalable Behaviour Cloning on Browser Using via Skill Distillation**
+> Kaisen Yang, Zheng Jiang, Yuzhao Peng, Houde Qian, Boshi Zhang, Youjie Zheng,
+> Shijin Hong, Qingle Liu, Ruoyu Han, Bohan Lyu, Bingxiang He, Eren Cai,
+> Calvin Xiao, Qinhuai Na.
+> arXiv:2606.32014, 2026. <https://arxiv.org/abs/2606.32014>
+
+If you use this project or the ideas behind it, please cite:
+
+```bibtex
+@article{yang2026scalable,
+  title   = {Scalable Behaviour Cloning on Browser Using via Skill Distillation},
+  author  = {Yang, Kaisen and Jiang, Zheng and Peng, Yuzhao and Qian, Houde and
+             Zhang, Boshi and Zheng, Youjie and Hong, Shijin and Liu, Qingle and
+             Han, Ruoyu and Lyu, Bohan and He, Bingxiang and Cai, Eren and
+             Xiao, Calvin and Na, Qinhuai},
+  journal = {arXiv preprint arXiv:2606.32014},
+  year    = {2026}
+}
+```
